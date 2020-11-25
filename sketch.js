@@ -13,7 +13,7 @@ var speed,weight;
     
     //creating bullet and wall sprites
     bullet=createSprite(50, 200, 59, 10);
-    bullet.velocityX=speed;
+   
 
     wall=createSprite(1200,200,thickness,height/2)
 
@@ -26,7 +26,7 @@ var speed,weight;
 function draw() { 
   background("black");
 
- 
+  bullet.velocityX=speed;
   function hasCollided (bullet,wall)
   {
     
